@@ -9,7 +9,8 @@ class Order(models.Model):
   email = models.EmailField(max_length=254,null=True)
   phone = models.CharField(max_length=50)
   time = models.CharField(max_length=200)
+  coupe = models.CharField(max_length=5000)
 
-class Coupe(models.Model):
-  name = models.CharField(max_length=200)
-  Order = models.ForeignKey(Order, related_name='coupe_order', on_delete=models.CASCADE,null=True)
+# class Coupe(models.Model):
+#   name = models.CharField(max_length=200)
+#   Order = models.ForeignKey(Order, related_name='coupe_order', on_delete=models.CASCADE,null=True)

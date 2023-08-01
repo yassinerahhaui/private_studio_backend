@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from .models import Coupe, Time, Order
+from .models import Time, Order # Coupe
 
-class CoupeSer(serializers.ModelSerializer):
-  class Meta:
-    model = Coupe
-    fields = '__all__'
+# class CoupeSer(serializers.ModelSerializer):
+#   class Meta:
+#     model = Coupe
+#     fields = '__all__'
 
 class TimeSer(serializers.ModelSerializer):
   class Meta:

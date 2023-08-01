@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRIVATE_STUDIO</title>
+</head>
+<body>
+  <h1>PRIVATE_STUDIO</h1>
+  <br>
+  <h3>1.Client Info</h3>
+  <ul>
+    <li><p><b>Name: </b>{{name}}</p></li>
+    <li><p><b>Email: </b>{{email}}</p></li>
+    <li><p><b>Phone: </b>{{phone}}</p></li>
+  </ul>
+  <h3>2.Date et heure sélectionnées</h3>
+  <ul>
+    <li><h6>{{ time }}</h6></li>
+  </ul>
+  
+  <h3>3.Service</h3>
+  <ul>
+    {% for x in coupe %}
+      <li><h6>{{ x }}</h6></li>  
+    {% endfor %}
+  </ul>
+</body>
+</html>

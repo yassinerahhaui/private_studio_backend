@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRIVATE_STUDIO</title>
+  </head>
+  <body>
+    <h1>PRIVATE_STUDIO</h1>
+    <br />
+    <h3>Hello {{name}}</h3>
+    <h6>See you at {{time}}</h6>
+    <div>
+      <h3>Address:</h3>
+      <address>
+        44 Rue Carnot, 02400 Château-Thierry
+        <a
+          href="https://www.google.com/maps/place/44+Rue+Carnot,+02400+Ch%C3%A2teau-Thierry,+France/@49.042267,3.4041139,17z/data=!3m1!4b1!4m6!3m5!1s0x47e8e63a7b68828b:0x65fb2b788858f12!8m2!3d49.042267!4d3.4041139!16s%2Fg%2F11b8z380xp?entry=ttu"
+          target="_blank"
+        >
+          View on map
+        </a>
+      </address>
+    </div>
+    <h3>Services</h3>
+    <ul>
+      {% for x in coupe %}
+      <li><h6>{{ x }}</h6></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
